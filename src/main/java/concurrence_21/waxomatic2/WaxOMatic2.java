@@ -1,5 +1,6 @@
 package concurrence_21.waxomatic2;
 
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -30,7 +31,7 @@ class Car {
     }
   }
 
-  public void waitForWaxing() {
+  public void waitForWaxing() throws InterruptedException {
     lock.lock();
     try {
       while (waxOn == false) {
@@ -41,7 +42,7 @@ class Car {
     }
   }
 
-  public void waitForBuffing() {
+  public void waitForBuffing() throws InterruptedException {
     lock.lock();
     try {
       while (waxOn == true) {
@@ -63,11 +64,25 @@ class WaxOn implements Runnable {
 
   public void run() {
     try {
-
+      while (!Thread.interrupted()) {
+        System.out.println("Wax On! ");
+        TimeUnit.MILLISECONDS.sleep(200);
+        car.waxed();
+        car.waitForBuffing();
+      }
     } catch (InterruptedException e) {
       System.out.println("Exiting via interrupt");
     }
     System.out.println("Ending Wax On task");
+  }
+}
+
+class WaxOff implements Runnable {
+
+  private Car car;
+
+  public WaxOff(Car c) {
+    car = c;
   }
 }
 
