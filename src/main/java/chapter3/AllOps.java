@@ -12,6 +12,7 @@ public class AllOps {
     f(!y);
     x = x && y;
     x = x || y;
+
     x = x & y;
     x = x | y;
     x = x ^ y;
@@ -40,6 +41,7 @@ public class AllOps {
     f(x <= y);
     f(x == y);
     f(x != y);
+
     x = (char) ~y;
     x = (char) (x & y);
     x = (char) (x | y);
@@ -47,14 +49,17 @@ public class AllOps {
     x = (char) (x << 1);
     x = (char) (x >> 1);
     x = (char) (x >>> 1);
+
     x += y;
     x -= y;
     x *= y;
     x /= y;
     x %= y;
+
     x <<= 1;
     x >>= 1;
     x >>>= 1;
+
     x &= y;
     x ^= y;
     x |= y;
@@ -73,8 +78,10 @@ public class AllOps {
     x = (byte) (x % y);
     x = (byte) (x + y);
     x = (byte) (x - y);
+
     x++;
     x--;
+
     x = (byte) +y;
     x = (byte) -y;
 
@@ -89,6 +96,7 @@ public class AllOps {
     x = (byte) (x & y);
     x = (byte) (x | y);
     x = (byte) (x ^ y);
+
     x = (byte) (x << 1);
     x = (byte) (x >> 1);
     x = (byte) (x >>> 1);
@@ -147,9 +155,11 @@ public class AllOps {
     x *= y;
     x /= y;
     x %= y;
+
     x <<= 1;
     x >>= 1;
     x >>>= 1;
+
     x &= y;
     x ^= y;
     x |= y;
@@ -186,6 +196,7 @@ public class AllOps {
     x = x & y;
     x = x | y;
     x = x ^ y;
+
     x = x << 1;
     x = x >> 1;
     x = x >>> 1;
@@ -195,9 +206,11 @@ public class AllOps {
     x *= y;
     x /= y;
     x %= y;
+
     x <<= 1;
     x >>= 1;
     x >>>= 1;
+
     x &= y;
     x ^= y;
     x |= y;
@@ -234,6 +247,7 @@ public class AllOps {
     x = x & y;
     x = x | y;
     x = x ^ y;
+
     x = x << 1;
     x = x >> 1;
     x = x >>> 1;
@@ -243,9 +257,11 @@ public class AllOps {
     x *= y;
     x /= y;
     x %= y;
+
     x <<= 1;
     x >>= 1;
     x >>>= 1;
+
     x &= y;
     x ^= y;
     x |= y;
