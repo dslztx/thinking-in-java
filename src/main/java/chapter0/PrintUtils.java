@@ -9,6 +9,10 @@ public class PrintUtils {
     System.out.println(a);
   }
 
+  public static void printnb(String a) {
+    System.out.print(a + "\t");
+  }
+
   public static void print(boolean a) {
     System.out.println(a);
   }
