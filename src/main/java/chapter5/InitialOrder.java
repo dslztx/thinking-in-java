@@ -1,33 +1,23 @@
 package chapter5;
-
 public class InitialOrder {
-
-  //Ä¬ÈÏ³õÊ¼»¯ºÍ¶¨Òå³õÊ¼»¯
+  //é»˜è®¤åˆå§‹åŒ–å’Œå®šä¹‰åˆå§‹åŒ–
   int i = f(10);
-
   {
-    System.out.println("¶¨Òå³õÊ¼»¯ºó i:" + i);
-
-    //ÊµÀı³õÊ¼»¯Óï¾ä³õÊ¼»¯
+    System.out.println("å®šä¹‰åˆå§‹åŒ–å i:" + i);
+    //å®ä¾‹åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–
     i = 20;
-
-    System.out.println("ÊµÀı³õÊ¼»¯Óï¾ä³õÊ¼»¯ºó i:" + i);
+    System.out.println("å®ä¾‹åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–å i:" + i);
   }
-
   public InitialOrder() {
-    //¹¹ÔìÆ÷³õÊ¼»¯
+    //æ„é€ å™¨åˆå§‹åŒ–
     i = 30;
-
-    System.out.println("¹¹ÔìÆ÷³õÊ¼»¯ºó i:" + i);
+    System.out.println("æ„é€ å™¨åˆå§‹åŒ–å i:" + i);
   }
-
   public static void main(String[] args) {
     new InitialOrder();
   }
-
   public int f(int a) {
-    System.out.println("Ä¬ÈÏ³õÊ¼»¯ºó i:" + i);
-
+    System.out.println("é»˜è®¤åˆå§‹åŒ–å i:" + i);
     return 10;
   }
 }
