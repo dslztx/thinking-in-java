@@ -2,24 +2,31 @@ package chapter5;
 
 public class InitialOrder2 {
 
-  //Ĭ�ϳ�ʼ���Ͷ����ʼ��
+  public static void main(String[] args) throws ClassNotFoundException {
+    //第一次遇见ExperimentObject类的声明，创建类对象，仅仅触发“默认初始化”
+    ExperimentObject object = null;
+
+    //如果ExperimentObject类对象已经创建，则触发“定义初始化和静态初始化语句初始化”；否则触发“默认初始化，定义初始化，静态初始化语句初始化”
+    Class.forName("chapter5.ExperimentObject");
+  }
+}
+
+class ExperimentObject {
+
+  //默认初始化和定义初始化
   static int i = f(10);
 
   static {
-    System.out.println("�����ʼ���� i:" + i);
+    System.out.println("定义初始化后 i:" + i);
 
-    //��̬��ʼ������ʼ��
+    //静态初始化语句初始化
     i = 20;
 
-    System.out.println("��̬��ʼ������ʼ���� i:" + i);
-  }
-
-  public static void main(String[] args) throws ClassNotFoundException {
-    Class.forName("chapter5.InitialOrder2");
+    System.out.println("静态初始化语句初始化后 i:" + i);
   }
 
   public static int f(int a) {
-    System.out.println("Ĭ�ϳ�ʼ���� i:" + i);
+    System.out.println("默认初始化后 i:" + i);
 
     return 10;
   }
