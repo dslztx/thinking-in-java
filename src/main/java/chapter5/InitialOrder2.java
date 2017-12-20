@@ -3,27 +3,27 @@ package chapter5;
 public class InitialOrder2 {
 
   public static void main(String[] args) throws ClassNotFoundException {
-    //å¦‚æœç¬¬ä¸€æ¬¡é‡è§ExperimentObjectç±»çš„å£°æ˜ï¼Œåˆ›å»ºç±»å¯¹è±¡ï¼Œä¸”è§¦å‘â€œé»˜è®¤åˆå§‹åŒ–â€
+    //Èç¹ûµÚÒ»´ÎÓö¼ûExperimentObjectÀàµÄÉùÃ÷£¬´´½¨Àà¶ÔÏó£¬ÇÒ´¥·¢¡°Ä¬ÈÏ³õÊ¼»¯¡±
     ExperimentObject object = null;
-    //å¦‚æœExperimentObjectç±»å¯¹è±¡å·²ç»åˆ›å»ºï¼Œåˆ™è§¦å‘â€œå®šä¹‰åˆå§‹åŒ–å’Œé™æ€åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–â€ï¼›å¦åˆ™åˆ›å»ºExperimentObjectç±»å¯¹è±¡ï¼Œä¸”è§¦å‘â€œé»˜è®¤åˆå§‹åŒ–ï¼Œå®šä¹‰åˆå§‹åŒ–ï¼Œé™æ€åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–â€
+    //Èç¹ûExperimentObjectÀà¶ÔÏóÒÑ¾­´´½¨£¬Ôò´¥·¢¡°¶¨Òå³õÊ¼»¯ºÍ¾²Ì¬³õÊ¼»¯Óï¾ä³õÊ¼»¯¡±£»·ñÔò´´½¨ExperimentObjectÀà¶ÔÏó£¬ÇÒ´¥·¢¡°Ä¬ÈÏ³õÊ¼»¯£¬¶¨Òå³õÊ¼»¯£¬¾²Ì¬³õÊ¼»¯Óï¾ä³õÊ¼»¯¡±
     Class.forName("chapter5.ExperimentObject");
   }
 }
 
 class ExperimentObject {
 
-  //é»˜è®¤åˆå§‹åŒ–å’Œå®šä¹‰åˆå§‹åŒ–
+  //Ä¬ÈÏ³õÊ¼»¯ºÍ¶¨Òå³õÊ¼»¯
   static int i = f(10);
 
   static {
-    System.out.println("å®šä¹‰åˆå§‹åŒ–å i:" + i);
-    //é™æ€åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–
+    System.out.println("¶¨Òå³õÊ¼»¯ºó i:" + i);
+    //¾²Ì¬³õÊ¼»¯Óï¾ä³õÊ¼»¯
     i = 20;
-    System.out.println("é™æ€åˆå§‹åŒ–è¯­å¥åˆå§‹åŒ–å i:" + i);
+    System.out.println("¾²Ì¬³õÊ¼»¯Óï¾ä³õÊ¼»¯ºó i:" + i);
   }
 
   public static int f(int a) {
-    System.out.println("é»˜è®¤åˆå§‹åŒ–å i:" + i);
+    System.out.println("Ä¬ÈÏ³õÊ¼»¯ºó i:" + i);
     return 10;
   }
 }
