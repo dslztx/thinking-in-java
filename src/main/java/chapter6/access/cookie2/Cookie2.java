@@ -1,4 +1,4 @@
-package chapter6;
+package chapter6.access.cookie2;
 
 public class Cookie2 {
 

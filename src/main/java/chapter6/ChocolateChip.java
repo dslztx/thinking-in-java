@@ -1,5 +1,7 @@
 package chapter6;
 
+import chapter6.access.dessert.Cookie;
+
 public class ChocolateChip extends Cookie {
 
   public ChocolateChip() {
