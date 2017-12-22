@@ -25,14 +25,14 @@ public class InheritanceAddress {
   public static void main(String[] args) {
     B bInstance = new B();
 
-    //“a”这个Java资源的地址不为“chapter6.B”，而为“chapter6.A”
+    //“a”为软资源。软资源自身地址为“chapter6.B”；所指向的祖先类中硬资源的地址为“chapter6.A”
     System.out.println(bInstance.a);
-    //“f()”这个Java资源的地址不为“chapter6.B”，而为“chapter6.A”
+    //“f()”为软资源。软资源自身地址为“chapter6.B”；所指向的祖先类中硬资源的地址为“chapter6.A”
     bInstance.f();
 
-    //“b”这个Java资源的地址为“chapter6.B”
+    //“b”为硬资源。硬资源自身地址为“chapter6.B”
     System.out.println(bInstance.b);
-    //“g()”这个Java资源的地址为“chapter6.B”
+    //“g()”为硬资源。硬资源自身地址为“chapter6.B”
     bInstance.g();
   }
 
