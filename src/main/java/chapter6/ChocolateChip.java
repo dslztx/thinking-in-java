@@ -14,6 +14,7 @@ public class ChocolateChip extends Cookie {
   }
 
   public void chomp() {
+//    bite();
   }
 
 }

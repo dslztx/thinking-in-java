@@ -30,7 +30,7 @@ class Soup2 {
 public class Lunch {
 
   void testPrivate() {
-
+//    Soup1 soup1 = new Soup1();
   }
 
   void testStatic() {
