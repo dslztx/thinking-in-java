@@ -2,6 +2,7 @@ package package2;
 
 import package1.A;
 import package1.AA1;
+import package1.AA4;
 import package3.AAA;
 
 /**
@@ -45,5 +46,11 @@ public class C {
     //“aaa.c”软资源存在，但是不可访问实际地址
     //System.out.println(aaa.c);
     System.out.println(aaa.d);
+
+    AA4 aa4 = new AA4();
+    System.out.println(aa4.a);
+    System.out.println(aa4.b);
+    System.out.println(aa4.c);
+    System.out.println(aa4.d);
   }
 }

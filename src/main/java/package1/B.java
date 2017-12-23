@@ -40,5 +40,11 @@ public class B {
     //System.out.println(aaa.b);
     System.out.println(aaa.c);
     System.out.println(aaa.d);
+
+    AA4 aa4 = new AA4();
+    System.out.println(aa4.a);
+    System.out.println(aa4.b);
+    System.out.println(aa4.c);
+    System.out.println(aa4.d);
   }
 }

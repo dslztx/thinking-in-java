@@ -1,5 +1,7 @@
 package package2;
 import package1.A;
+import package3.AAA;
+
 /**
  * 不同包子类（注释掉的资源表示不能被访问）
  *
@@ -15,5 +17,11 @@ public class AA2 extends A {
     //System.out.println(aa2.b);
     System.out.println(aa2.c);
     System.out.println(aa2.d);
+
+    AAA aaa = new AAA();
+    System.out.println(aaa.a);
+    System.out.println(aaa.b);
+    System.out.println(aaa.c);
+    System.out.println(aaa.d);
   }
 }
