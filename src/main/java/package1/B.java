@@ -4,39 +4,39 @@ import package2.AA2;
 import package3.AAA;
 
 /**
- * ·ÃÎÊ¸¸Àà£¬×ÓÀà1£¬×ÓÀà2£¬ËïÀà£¬¸ú¸¸ÀàºÍ×ÓÀà1Í¬°ü£¨×¢ÊÍµôµÄ×ÊÔ´±íÊ¾²»ÄÜ±»·ÃÎÊ£©
+ * è®¿é—®çˆ¶ç±»ï¼Œå­ç±»1ï¼Œå­ç±»2ï¼Œå­™ç±»ï¼Œè·Ÿçˆ¶ç±»å’Œå­ç±»1åŒåŒ…ï¼ˆæ³¨é‡Šæ‰çš„èµ„æºè¡¨ç¤ºä¸èƒ½è¢«è®¿é—®ï¼‰
  *
  * @author dsl
  */
 public class B {
 
   public static void main(String[] args) {
-    //´´½¨¸¸ÀàÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºçˆ¶ç±»å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     A a = new A();
     //System.out.println(a.a);
     System.out.println(a.b);
     System.out.println(a.c);
     System.out.println(a.d);
-    //´´½¨×ÓÀà1ÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºå­ç±»1å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     AA1 aa1 = new AA1();
-    //¡°aa1.a¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaa1.aâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aa1.a);
     System.out.println(aa1.b);
     System.out.println(aa1.c);
     System.out.println(aa1.d);
-    //´´½¨×ÓÀà2ÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºå­ç±»2å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     AA2 aa2 = new AA2();
-    //¡°aa2.a¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaa2.aâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aa2.a);
-    //¡°aa2.b¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaa2.bâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aa2.b);
     System.out.println(aa2.c);
     System.out.println(aa2.d);
-    //´´½¨ËïÀàÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºå­™ç±»å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     AAA aaa = new AAA();
-    //¡°aaa.a¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaaa.aâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aaa.a);
-    //¡°aaa.b¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaaa.bâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aaa.b);
     System.out.println(aaa.c);
     System.out.println(aaa.d);

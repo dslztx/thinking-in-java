@@ -1,14 +1,14 @@
 package package1;
 
 /**
- * Í¬°ü×ÓÀà£¨×¢ÊÍµôµÄ×ÊÔ´±íÊ¾²»ÄÜ±»·ÃÎÊ£©
+ * åŒåŒ…å­ç±»ï¼ˆæ³¨é‡Šæ‰çš„èµ„æºè¡¨ç¤ºä¸èƒ½è¢«è®¿é—®ï¼‰
  *
  * @author dsl
  */
 public class AA1 extends A {
 
   public static void main(String[] args) {
-    //´´½¨×ÔÉíÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºè‡ªèº«å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     AA1 aa1 = new AA1();
     //System.out.println(aa1.a);
     System.out.println(aa1.b);

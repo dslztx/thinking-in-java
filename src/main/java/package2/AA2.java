@@ -1,17 +1,17 @@
 package package2;
 import package1.A;
 /**
- * ²»Í¬°ü×ÓÀà£¨×¢ÊÍµôµÄ×ÊÔ´±íÊ¾²»ÄÜ±»·ÃÎÊ£©
+ * ä¸åŒåŒ…å­ç±»ï¼ˆæ³¨é‡Šæ‰çš„èµ„æºè¡¨ç¤ºä¸èƒ½è¢«è®¿é—®ï¼‰
  *
  * @author dsl
  */
 public class AA2 extends A {
   public static void main(String[] args) {
-    //´´½¨×ÔÉíÊµÀı£¬½øĞĞ·ÃÎÊ
+    //åˆ›å»ºè‡ªèº«å®ä¾‹ï¼Œè¿›è¡Œè®¿é—®
     AA2 aa2 = new AA2();
-    //¡°aa2.a¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaa2.aâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aa2.a);
-    //¡°aa2.b¡±Èí×ÊÔ´²»´æÔÚ
+    //â€œaa2.bâ€è½¯èµ„æºä¸å­˜åœ¨
     //System.out.println(aa2.b);
     System.out.println(aa2.c);
     System.out.println(aa2.d);
