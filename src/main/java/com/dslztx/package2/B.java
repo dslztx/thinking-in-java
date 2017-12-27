@@ -6,10 +6,10 @@ public class B extends A {
 
   void f() {
 
-    ff();
+//    ff();
 
     //
-    System.out.println(this.a);
+//    System.out.println(this.a);
 
 //    System.out.println(this.b);
   }

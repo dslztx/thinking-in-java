@@ -12,38 +12,43 @@ import package2.AA2;
 public class D {
 
   public static void main(String[] args) {
-    //创建父类实例，进行访问
     A a = new A();
+    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
     //System.out.println(a.a);
+    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
     //System.out.println(a.b);
+    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
     //System.out.println(a.c);
     System.out.println(a.d);
-    //创建子类1实例，进行访问
+
     AA1 aa1 = new AA1();
-    //“aa1.a”软资源不存在
+    //不能访问，在该类的完整定义中，“a”类成员不存在
     //System.out.println(aa1.a);
-    //“aa1.b”软资源存在，但是不可访问实际地址
+    //不能访问，“规则集2”不满足
     //System.out.println(aa1.b);
-    //“aa1.c”软资源存在，但是不可访问实际地址
+    //不能访问，“规则集2”不满足
     //System.out.println(aa1.c);
+    //能访问，引用链中最后一个节点对应地址与“访问者地址”满足“规则集1”
     System.out.println(aa1.d);
-    //创建子类2实例，进行访问
+
     AA2 aa2 = new AA2();
-    //“aa2.a”软资源不存在
+    //不能访问，在该类的完整定义中，“a”类成员不存在
     //System.out.println(aa2.a);
-    //“aa2.b”软资源不存在
+    //不能访问，在该类的完整定义中，“b”类成员不存在
     //System.out.println(aa2.b);
-    //“aa2.c”软资源存在，但是不可访问实际地址
+    //不能访问，“规则集2”不满足
     //System.out.println(aa2.c);
+    //能访问，引用链中第一个节点对应地址与“访问者地址”一致
     System.out.println(aa2.d);
-    //创建孙类实例，进行访问
+
     AAA aaa = new AAA();
-    //“aaa.a”软资源不存在
+    //不能访问，在该类的完整定义中，“a”类成员不存在
     //System.out.println(aaa.a);
-    //“aaa.b”软资源不存在
+    //不能访问，在该类的完整定义中，“b”类成员不存在
     //System.out.println(aaa.b);
-    //“aaa.c”软资源存在，但是不可访问实际地址
+    //不能访问，“规则集2”不满足
     //System.out.println(aaa.c);
+    //能访问，引用链中第一个节点对应地址与“访问者地址”一致
     System.out.println(aaa.d);
   }
 }
