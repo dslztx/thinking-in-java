@@ -11,17 +11,17 @@ import package3.AAA;
  */
 public class AA2 extends A {
 
-  //类的完整定义包含下面复制类成员
+  //类的完整定义包含下面“复制类成员”
   //public int d;
   //protected int c;
 
   public static void main(String[] args) {
     A a = new A();
-    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
+    //不能访问，“类成员地址”与“访问者地址”不满足“规则集1”
     //System.out.println(a.a);
-    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
+    //不能访问，“类成员地址”与“访问者地址”不满足“规则集1”
     //System.out.println(a.b);
-    //不能访问，类成员地址与“访问者地址”不满足“规则集1”
+    //不能访问，“类成员地址”与“访问者地址”不满足“规则集1”
     //System.out.println(a.c);
     System.out.println(a.d);
 
