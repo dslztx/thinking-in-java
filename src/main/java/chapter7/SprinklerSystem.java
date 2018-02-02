@@ -27,7 +27,7 @@ public class SprinklerSystem {
   }
 
   public String toString() {
-    return "valve1 = " + valve1 + " " + "valve2 = " + valve2 + "valve3 = " + valve3 + "valve4 = "
-        + valve4 + "\n" + "i = " + " " + "f = " + f + " " + "source = " + source;
+    return "valve1 = " + valve1 + " valve2 = " + valve2 + " valve3 = " + valve3 + " valve4 = "
+        + valve4 + "\n" + "i = " + i + " f = " + f + " " + "source = " + source;
   }
 }

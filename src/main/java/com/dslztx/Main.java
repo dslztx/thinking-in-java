@@ -1,20 +1,20 @@
 package com.dslztx;
-// ä¸€èˆ¬å½¢å¼
+// Ò»°ãĞÎÊ½
 import java.util.ArrayList;
-// é€šé…ç¬¦å½¢å¼
+// Í¨Åä·ûĞÎÊ½
 import java.io.*;
-// é™æ€å¯¼å…¥å½¢å¼
+// ¾²Ì¬µ¼ÈëĞÎÊ½
 import static java.util.Calendar.*;
 public class Main {
   public static void main(String[] args) {
-    // ArrayListç±»ç”±"import java.util.ArrayList"è¯­å¥å¯¼å…¥
+    // ArrayListÀàÓÉ"import java.util.ArrayList"Óï¾äµ¼Èë
     ArrayList<String> list;
-    // Fileç±»ç”±"import java.io.*"è¯­å¥å¯¼å…¥
+    // FileÀàÓÉ"import java.io.*"Óï¾äµ¼Èë
     File file;
-    // é™æ€å­—æ®µ"YEAR"ç”±"import static java.util.Calendar.*"è¯­å¥å¯¼å…¥
+    // ¾²Ì¬×Ö¶Î"YEAR"ÓÉ"import static java.util.Calendar.*"Óï¾äµ¼Èë
     System.out.println(YEAR);
 
-    // ä¸ä½¿ç”¨"import"è¯­å¥ï¼Œå°±å¾—ä½¿ç”¨å…¨åç§°æ–¹å¼
+    // ²»Ê¹ÓÃ"import"Óï¾ä£¬¾ÍµÃÊ¹ÓÃÈ«Ãû³Æ·½Ê½
     java.util.Vector vector;
   }
 }

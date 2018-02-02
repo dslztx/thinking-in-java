@@ -1,25 +1,25 @@
 package chapter6;
 
-//â€œJavaResourceAddressâ€è¿™ä¸ªJavaèµ„æºï¼ˆç±»ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+//¡°JavaResourceAddress¡±Õâ¸öJava×ÊÔ´£¨Àà£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
 public class JavaResourceAddress extends JavaResourceAddressParent {
 
-  //â€œbâ€è¿™ä¸ªJavaèµ„æºï¼ˆåŸç”Ÿç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°b¡±Õâ¸öJava×ÊÔ´£¨Ô­ÉúÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
   static int b;
 
-  //â€œaâ€è¿™ä¸ªJavaèµ„æºï¼ˆåŸç”Ÿç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°a¡±Õâ¸öJava×ÊÔ´£¨Ô­ÉúÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
   int a;
 
-  //â€œg()â€è¿™ä¸ªJavaèµ„æºï¼ˆåŸç”Ÿç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°g()¡±Õâ¸öJava×ÊÔ´£¨Ô­ÉúÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
   static void g() {
   }
 
-  //â€œf()â€è¿™ä¸ªJavaèµ„æºï¼ˆåŸç”Ÿç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°f()¡±Õâ¸öJava×ÊÔ´£¨Ô­ÉúÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
   void f() {
   }
 
-  //â€œcâ€è¿™ä¸ªJavaèµ„æºï¼ˆå¤åˆ¶ç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°c¡±Õâ¸öJava×ÊÔ´£¨¸´ÖÆÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
 
-  //â€œh()â€è¿™ä¸ªJavaèµ„æºï¼ˆå¤åˆ¶ç±»æˆå‘˜ï¼‰çš„åœ°å€ä¸ºâ€œchapter6.JavaResourceAddressâ€
+  //¡°h()¡±Õâ¸öJava×ÊÔ´£¨¸´ÖÆÀà³ÉÔ±£©µÄµØÖ·Îª¡°chapter6.JavaResourceAddress¡±
 
 }
 
