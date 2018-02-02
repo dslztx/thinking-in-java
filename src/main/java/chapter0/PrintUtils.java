@@ -21,6 +21,11 @@ public class PrintUtils {
     System.out.println(a);
   }
 
+  public static void print(Object a)
+  {
+    System.out.println(a);
+  }
+
   public static List<Integer> range(int start, int end, int step) {
     List<Integer> list = new ArrayList<Integer>();
     for (int i = start; i < end; i += step) {
