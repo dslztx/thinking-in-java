@@ -31,6 +31,21 @@ class CompileConstantExampleClass {
   // 编译期常量，编译期优化：编译时完成拼接
   static final String h = "wor" + "ld";
 
+  // 编译期常量
+  static final int p = 10 + 20;
+
+  // 编译期常量
+  static final String q = d + " beautiful";
+
+  // 编译期常量
+  static final int r = 10 - 20;
+
+  // 编译期常量
+  static final int s = 10 * 20;
+
+  // 编译期常量
+  static final int t = 20 / 10;
+
   // 非编译期常量
   static final String i = "world" + rand.nextInt(10) + "ld";
 
@@ -56,6 +71,11 @@ class CompileConstantExampleClass {
     System.out.println(CompileConstantExampleClass.h);
     System.out.println(CompileConstantExampleClass.i);
     System.out.println(CompileConstantExampleClass.k);
+    System.out.println(CompileConstantExampleClass.p);
+    System.out.println(CompileConstantExampleClass.q);
+    System.out.println(CompileConstantExampleClass.r);
+    System.out.println(CompileConstantExampleClass.s);
+    System.out.println(CompileConstantExampleClass.t);
 
     CompileConstantExampleClass compileConstantExampleClass = new CompileConstantExampleClass();
     System.out.println(compileConstantExampleClass.a);
