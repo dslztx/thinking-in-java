@@ -5,53 +5,53 @@ import package1.AA1;
 import package2.AA2;
 
 /**
- * è·¨äº†ä¸¤å±‚åŒ…çš„å­™ç±»ï¼ˆæ³¨é‡ŠæŽ‰çš„èµ„æºè¡¨ç¤ºä¸èƒ½è¢«è®¿é—®ï¼‰
+ * ¿çÁËÁ½²ã°üµÄËïÀà£¨×¢ÊÍµôµÄ×ÊÔ´±íÊ¾²»ÄÜ±»·ÃÎÊ£©
  *
  * @author dsl
  */
 public class AAA extends AA2 {
-  //ç±»çš„å®Œæ•´å®šä¹‰åŒ…å«ä¸‹é¢â€œå¤åˆ¶ç±»æˆå‘˜â€
+  //ÀàµÄÍêÕû¶¨Òå°üº¬ÏÂÃæ¡°¸´ÖÆÀà³ÉÔ±¡±
   //public int d;
   //protected int c;
 
   public static void main(String[] args) {
     A a = new A();
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œç±»æˆå‘˜åœ°å€â€ä¸Žâ€œè®¿é—®è€…åœ°å€â€ä¸æ»¡è¶³â€œè§„åˆ™é›†1â€
+    //²»ÄÜ·ÃÎÊ£¬¡°Àà³ÉÔ±µØÖ·¡±Óë¡°·ÃÎÊÕßµØÖ·¡±²»Âú×ã¡°¹æÔò¼¯1¡±
     //System.out.println(a.a);
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œç±»æˆå‘˜åœ°å€â€ä¸Žâ€œè®¿é—®è€…åœ°å€â€ä¸æ»¡è¶³â€œè§„åˆ™é›†1â€
+    //²»ÄÜ·ÃÎÊ£¬¡°Àà³ÉÔ±µØÖ·¡±Óë¡°·ÃÎÊÕßµØÖ·¡±²»Âú×ã¡°¹æÔò¼¯1¡±
     //System.out.println(a.b);
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œç±»æˆå‘˜åœ°å€â€ä¸Žâ€œè®¿é—®è€…åœ°å€â€ä¸æ»¡è¶³â€œè§„åˆ™é›†1â€
+    //²»ÄÜ·ÃÎÊ£¬¡°Àà³ÉÔ±µØÖ·¡±Óë¡°·ÃÎÊÕßµØÖ·¡±²»Âú×ã¡°¹æÔò¼¯1¡±
     //System.out.println(a.c);
     System.out.println(a.d);
 
     AA1 aa1 = new AA1();
-    //ä¸èƒ½è®¿é—®ï¼Œåœ¨è¯¥ç±»çš„å®Œæ•´å®šä¹‰ä¸­ï¼Œâ€œaâ€ç±»æˆå‘˜ä¸å­˜åœ¨
+    //²»ÄÜ·ÃÎÊ£¬ÔÚ¸ÃÀàµÄÍêÕû¶¨ÒåÖÐ£¬¡°a¡±Àà³ÉÔ±²»´æÔÚ
     //System.out.println(aa1.a);
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œè§„åˆ™é›†2â€ä¸æ»¡è¶³
+    //²»ÄÜ·ÃÎÊ£¬¡°¹æÔò¼¯2¡±²»Âú×ã
     //System.out.println(aa1.b);
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œè§„åˆ™é›†2â€ä¸æ»¡è¶³
+    //²»ÄÜ·ÃÎÊ£¬¡°¹æÔò¼¯2¡±²»Âú×ã
     //System.out.println(aa1.c);
-    //èƒ½è®¿é—®ï¼Œå¼•ç”¨é“¾ä¸­æœ€åŽä¸€ä¸ªèŠ‚ç‚¹å¯¹åº”åœ°å€ä¸Žâ€œè®¿é—®è€…åœ°å€â€æ»¡è¶³â€œè§„åˆ™é›†1â€
+    //ÄÜ·ÃÎÊ£¬ÒýÓÃÁ´ÖÐ×îºóÒ»¸ö½Úµã¶ÔÓ¦µØÖ·Óë¡°·ÃÎÊÕßµØÖ·¡±Âú×ã¡°¹æÔò¼¯1¡±
     System.out.println(aa1.d);
 
     AA2 aa2 = new AA2();
-    //ä¸èƒ½è®¿é—®ï¼Œåœ¨è¯¥ç±»çš„å®Œæ•´å®šä¹‰ä¸­ï¼Œâ€œaâ€ç±»æˆå‘˜ä¸å­˜åœ¨
+    //²»ÄÜ·ÃÎÊ£¬ÔÚ¸ÃÀàµÄÍêÕû¶¨ÒåÖÐ£¬¡°a¡±Àà³ÉÔ±²»´æÔÚ
     //System.out.println(aa2.a);
-    //ä¸èƒ½è®¿é—®ï¼Œåœ¨è¯¥ç±»çš„å®Œæ•´å®šä¹‰ä¸­ï¼Œâ€œbâ€ç±»æˆå‘˜ä¸å­˜åœ¨
+    //²»ÄÜ·ÃÎÊ£¬ÔÚ¸ÃÀàµÄÍêÕû¶¨ÒåÖÐ£¬¡°b¡±Àà³ÉÔ±²»´æÔÚ
     //System.out.println(aa2.b);
-    //ä¸èƒ½è®¿é—®ï¼Œâ€œè§„åˆ™é›†2â€ä¸æ»¡è¶³
+    //²»ÄÜ·ÃÎÊ£¬¡°¹æÔò¼¯2¡±²»Âú×ã
     //System.out.println(aa2.c);
-    //èƒ½è®¿é—®ï¼Œå¼•ç”¨é“¾ä¸­æœ€åŽä¸€ä¸ªèŠ‚ç‚¹å¯¹åº”åœ°å€ä¸Žâ€œè®¿é—®è€…åœ°å€â€æ»¡è¶³â€œè§„åˆ™é›†1â€
+    //ÄÜ·ÃÎÊ£¬ÒýÓÃÁ´ÖÐ×îºóÒ»¸ö½Úµã¶ÔÓ¦µØÖ·Óë¡°·ÃÎÊÕßµØÖ·¡±Âú×ã¡°¹æÔò¼¯1¡±
     System.out.println(aa2.d);
 
     AAA aaa = new AAA();
-    //ä¸èƒ½è®¿é—®ï¼Œåœ¨è¯¥ç±»çš„å®Œæ•´å®šä¹‰ä¸­ï¼Œâ€œaâ€ç±»æˆå‘˜ä¸å­˜åœ¨
+    //²»ÄÜ·ÃÎÊ£¬ÔÚ¸ÃÀàµÄÍêÕû¶¨ÒåÖÐ£¬¡°a¡±Àà³ÉÔ±²»´æÔÚ
     //System.out.println(aaa.a);
-    //ä¸èƒ½è®¿é—®ï¼Œåœ¨è¯¥ç±»çš„å®Œæ•´å®šä¹‰ä¸­ï¼Œâ€œbâ€ç±»æˆå‘˜ä¸å­˜åœ¨
+    //²»ÄÜ·ÃÎÊ£¬ÔÚ¸ÃÀàµÄÍêÕû¶¨ÒåÖÐ£¬¡°b¡±Àà³ÉÔ±²»´æÔÚ
     //System.out.println(aaa.b);
-    //èƒ½è®¿é—®ï¼Œå¼•ç”¨é“¾ä¸­ç¬¬ä¸€ä¸ªèŠ‚ç‚¹å¯¹åº”åœ°å€ä¸Žâ€œè®¿é—®è€…åœ°å€â€ä¸€è‡´
+    //ÄÜ·ÃÎÊ£¬ÒýÓÃÁ´ÖÐµÚÒ»¸ö½Úµã¶ÔÓ¦µØÖ·Óë¡°·ÃÎÊÕßµØÖ·¡±Ò»ÖÂ
     System.out.println(aaa.c);
-    //èƒ½è®¿é—®ï¼Œå¼•ç”¨é“¾ä¸­ç¬¬ä¸€ä¸ªèŠ‚ç‚¹å¯¹åº”åœ°å€ä¸Žâ€œè®¿é—®è€…åœ°å€â€ä¸€è‡´
+    //ÄÜ·ÃÎÊ£¬ÒýÓÃÁ´ÖÐµÚÒ»¸ö½Úµã¶ÔÓ¦µØÖ·Óë¡°·ÃÎÊÕßµØÖ·¡±Ò»ÖÂ
     System.out.println(aaa.d);
   }
 }

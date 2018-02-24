@@ -4,7 +4,7 @@ public class MethodVariableInitialization {
 
   void f() {
     int b;
-    //ç¼–è¯‘å‡ºé”™ï¼Œæç¤ºå˜é‡bæœªè¢«åˆå§‹åŒ–
+    //±àÒë³ö´í£¬ÌáÊ¾±äÁ¿bÎ´±»³õÊ¼»¯
     /*System.out.println(b);*/
   }
 }

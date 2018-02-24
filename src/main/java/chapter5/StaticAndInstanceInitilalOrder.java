@@ -19,10 +19,10 @@ class D {
 public class StaticAndInstanceInitilalOrder {
 
   public static void main(String[] args) {
-    //è®¿é—®ç±»Cçš„é™æ€æ•°æ®å­—æ®µï¼ŒåŠ è½½ç±»Cçš„Classæ–‡ä»¶ï¼Œå¼•å‘é™æ€åˆå§‹åŒ–ï¼›æ²¡æœ‰åˆ›å»ºç±»Cçš„å®žä¾‹å¯¹è±¡ï¼Œæœªå¼•å‘å®žä¾‹åˆå§‹åŒ–
+    //·ÃÎÊÀàCµÄ¾²Ì¬Êý¾Ý×Ö¶Î£¬¼ÓÔØÀàCµÄClassÎÄ¼þ£¬Òý·¢¾²Ì¬³õÊ¼»¯£»Ã»ÓÐ´´½¨ÀàCµÄÊµÀý¶ÔÏó£¬Î´Òý·¢ÊµÀý³õÊ¼»¯
     System.out.println(C.b);
 
-    //è®¿é—®ç±»Dçš„æž„é€ æ–¹æ³•ï¼ŒåŠ è½½ç±»Dçš„Classæ–‡ä»¶ï¼Œå¼•å‘é™æ€åˆå§‹åŒ–ï¼›åˆ›å»ºç±»Dçš„å®žä¾‹å¯¹è±¡ï¼Œå¼•å‘å®žä¾‹åˆå§‹åŒ–
+    //·ÃÎÊÀàDµÄ¹¹Ôì·½·¨£¬¼ÓÔØÀàDµÄClassÎÄ¼þ£¬Òý·¢¾²Ì¬³õÊ¼»¯£»´´½¨ÀàDµÄÊµÀý¶ÔÏó£¬Òý·¢ÊµÀý³õÊ¼»¯
     D d = new D();
   }
 }

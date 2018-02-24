@@ -4,11 +4,11 @@ import chapter6.subpackage1.A;
 
 public class B extends A {
 
-  //ç±»Bçš„å®Œæ•´å®šä¹‰
+  //ÀàBµÄÍêÕû¶¨Òå
   //int c;
 
   public void f() {
-    //åŠ ä¸Šæ³¨é‡Šè¯­å¥ï¼Œç¼–è¯‘å‡ºé”™
+    //¼ÓÉÏ×¢ÊÍÓï¾ä£¬±àÒë³ö´í
     //System.out.println(a);
 
     System.out.println(c);
