@@ -63,6 +63,24 @@ class CompileConstantExampleClass {
     System.out.println(compileConstantExampleClass.e);
     System.out.println(compileConstantExampleClass.g);
     System.out.println(compileConstantExampleClass.j);
+
+    // 编译期常量
+    final int l = 10;
+
+    // 编译期常量
+    final String m = "world";
+
+    // 非编译期常量
+    final int n = rand.nextInt(10);
+
+    // 非编译期常量
+    final String o = "hell" + rand.nextInt(10) + "o";
+
+    System.out.println(l);
+    System.out.println(m);
+    System.out.println(n);
+    System.out.println(o);
+
   }
 
 }
