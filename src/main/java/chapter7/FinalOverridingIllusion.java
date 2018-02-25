@@ -9,7 +9,7 @@ class WithFinals {
   }
 
   private void g() {
-    PrintUtils.print("WithFinals.g(");
+    PrintUtils.print("WithFinals.g()");
   }
 }
 
