@@ -2,31 +2,7 @@ package com.dslztx.package1;
 
 public class A {
 
-  static int a;
+  public int a = 100;
 
-  int b;
-
-  static void f() {
-
-  }
-
-  void g() {
-
-  }
-
-}
-
-class B extends A {
-
-  static int c;
-
-  int d;
-
-  static void h() {
-
-  }
-
-  void j() {
-
-  }
+  int b = 100;
 }
