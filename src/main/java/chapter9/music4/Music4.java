@@ -1,4 +1,4 @@
-package chapter9;
+package chapter9.music4;
 
 import chapter0.PrintUtils;
 import chapter8.music.Note;
@@ -75,12 +75,10 @@ class Brass extends Instrument {
   }
 }
 
-class Woodwind extends Wind
-{
+class Woodwind extends Wind {
 
   @Override
   public void play(Note n) {
-
   }
 
   @Override
@@ -90,5 +88,22 @@ class Woodwind extends Wind
 }
 
 public class Music4 {
+
+  static void tune(Instrument i) {
+    i.play(Note.MIDDLE_C);
+  }
+
+  static void tuneAll(Instrument[] e) {
+    for (Instrument i : e) {
+      tune(i);
+    }
+  }
+
+  public static void main(String[] args) {
+    Instrument[] orchestra = {new Wind(), new Percussion(), new Stringed(), new Brass(),
+        new Woodwind()};
+    tuneAll(orchestra);
+  }
+
 
 }
