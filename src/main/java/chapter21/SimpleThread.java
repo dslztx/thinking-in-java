@@ -1,5 +1,7 @@
 package chapter21;
 
+import java.util.concurrent.TimeUnit;
+
 public class SimpleThread extends Thread {
 
   private static int threadCount = 0;
@@ -25,6 +27,12 @@ public class SimpleThread extends Thread {
       System.out.println(this);
       if (--countDown == 0) {
         return;
+      }
+
+      try {
+        TimeUnit.SECONDS.sleep(1);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
       }
     }
   }

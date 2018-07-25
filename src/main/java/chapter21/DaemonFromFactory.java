@@ -13,6 +13,7 @@ public class DaemonFromFactory implements Runnable {
     for (int i = 0; i < 10; i++) {
       exec.execute(new DaemonFromFactory());
     }
+
     PrintUtils.print("All daemons started");
     TimeUnit.MILLISECONDS.sleep(500);
   }

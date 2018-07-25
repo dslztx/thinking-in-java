@@ -19,10 +19,12 @@ class ADaemon implements Runnable {
 
 public class DaemonsDontRunFinally {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     Thread t = new Thread(new ADaemon());
     t.setDaemon(true);
     t.start();
+
+    TimeUnit.MILLISECONDS.sleep(100);
   }
 
 }

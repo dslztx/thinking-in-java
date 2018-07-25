@@ -17,6 +17,7 @@ class Daemon implements Runnable {
     for (int i = 0; i < t.length; i++) {
       PrintUtils.print("t[" + i + "].isDaemon() = " + t[i].isDaemon() + ", ");
     }
+
     while (true) {
       Thread.yield();
     }

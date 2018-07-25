@@ -134,8 +134,7 @@ class InnerRunnable2 {
       public String toString() {
         return Thread.currentThread().getName() + ": " + countDown;
       }
-    }, name
-    );
+    }, name);
 
     t.start();
   }

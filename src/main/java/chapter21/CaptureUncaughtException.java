@@ -7,8 +7,10 @@ import java.util.concurrent.ThreadFactory;
 public class CaptureUncaughtException {
 
   public static void main(String[] args) {
-    ExecutorService exec = Executors.newCachedThreadPool(new HandlerThreadFactory());
+    ExecutorService exec = Executors.newSingleThreadExecutor(new HandlerThreadFactory());
     exec.execute(new ExceptionThread2());
+
+    exec.shutdown();
   }
 }
 
@@ -42,4 +44,3 @@ class HandlerThreadFactory implements ThreadFactory {
     return t;
   }
 }
-

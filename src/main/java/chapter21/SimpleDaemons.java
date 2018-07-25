@@ -19,7 +19,6 @@ public class SimpleDaemons implements Runnable {
   public void run() {
     try {
       while (true) {
-
         TimeUnit.MILLISECONDS.sleep(100);
         PrintUtils.print(Thread.currentThread() + " " + this);
       }
