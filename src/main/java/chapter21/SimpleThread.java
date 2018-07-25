@@ -1,22 +1,23 @@
-package concurrence_21;
+package chapter21;
 
-public class SelfManaged implements Runnable {
+public class SimpleThread extends Thread {
 
+  private static int threadCount = 0;
   private int countDown = 5;
-  private Thread t = new Thread(this);
 
-  public SelfManaged() {
-    t.start();
+  public SimpleThread() {
+    super(Integer.toString(++threadCount));
+    start();
   }
 
   public static void main(String[] args) {
     for (int i = 0; i < 5; i++) {
-      new SelfManaged();
+      new SimpleThread();
     }
   }
 
   public String toString() {
-    return Thread.currentThread().getName() + "(" + countDown + "), ";
+    return "#" + getName() + "(" + countDown + "), ";
   }
 
   public void run() {

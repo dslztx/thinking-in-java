@@ -1,5 +1,6 @@
-package concurrence_21;
+package chapter21;
 
+import chapter0.PrintUtils;
 import java.util.concurrent.TimeUnit;
 
 class InnerThread1 {
@@ -21,14 +22,14 @@ class InnerThread1 {
     public void run() {
       try {
         while (true) {
-          System.out.println(this);
+          PrintUtils.print(this);
           if (--countDown == 0) {
             return;
           }
-          TimeUnit.MILLISECONDS.sleep(10);
+          sleep(10);
         }
       } catch (InterruptedException e) {
-        System.out.println("interrupted");
+        PrintUtils.print("interrupted");
       }
     }
 
@@ -48,14 +49,15 @@ class InnerThread2 {
       public void run() {
         try {
           while (true) {
-            System.out.println(this);
+            PrintUtils.print(this);
+
             if (--countDown == 0) {
               return;
             }
-            TimeUnit.MILLISECONDS.sleep(10);
+            sleep(10);
           }
         } catch (InterruptedException e) {
-          System.out.println("sleep() interrupted");
+          PrintUtils.print("sleep() interrupted");
         }
       }
 
@@ -63,9 +65,11 @@ class InnerThread2 {
         return getName() + ": " + countDown;
       }
     };
+
     t.start();
   }
 }
+
 
 class InnerRunnable1 {
 
@@ -88,14 +92,14 @@ class InnerRunnable1 {
     public void run() {
       try {
         while (true) {
-          System.out.println(this);
+          PrintUtils.print(this);
           if (--countDown == 0) {
             return;
           }
           TimeUnit.MILLISECONDS.sleep(10);
         }
       } catch (InterruptedException e) {
-        System.out.println("sleep() interrupted");
+        PrintUtils.print("sleep() interrupted");
       }
     }
 
@@ -112,24 +116,27 @@ class InnerRunnable2 {
 
   public InnerRunnable2(String name) {
     t = new Thread(new Runnable() {
+      @Override
       public void run() {
         try {
           while (true) {
-            System.out.println(this);
+            PrintUtils.print(this);
             if (--countDown == 0) {
               return;
             }
             TimeUnit.MILLISECONDS.sleep(10);
           }
         } catch (InterruptedException e) {
-          System.out.println("sleep() interrupted");
+          PrintUtils.print("sleep() interrupted");
         }
       }
 
       public String toString() {
         return Thread.currentThread().getName() + ": " + countDown;
       }
-    }, name);
+    }, name
+    );
+
     t.start();
   }
 }
@@ -150,21 +157,22 @@ class ThreadMethod {
         public void run() {
           try {
             while (true) {
-              System.out.println(this);
+              PrintUtils.print(this);
               if (--countDown == 0) {
                 return;
               }
-              TimeUnit.MILLISECONDS.sleep(10);
+              sleep(10);
             }
           } catch (InterruptedException e) {
-            System.out.println("sleep() interrupted");
+            PrintUtils.print("sleep() interrupted");
           }
         }
 
         public String toString() {
-          return Thread.currentThread().getName() + ": " + countDown;
+          return getName() + ": " + countDown;
         }
       };
+
       t.start();
     }
   }
@@ -179,5 +187,4 @@ public class ThreadVariations {
     new InnerRunnable2("InnerRunnable2");
     new ThreadMethod("ThreadMethod").runTask();
   }
-
 }

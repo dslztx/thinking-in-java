@@ -1,4 +1,4 @@
-package concurrence_21;
+package chapter21;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -29,12 +29,13 @@ public class SimplePriorities implements Runnable {
   public void run() {
     Thread.currentThread().setPriority(priority);
     while (true) {
-      for (int i = 1; i < 10000000; i++) {
-        d += (Math.PI + Math.E) / (double) i;
+      for (int i = 0; i < 100000; i++) {
+        d += (Math.PI + Math.E);
         if (i % 1000 == 0) {
           Thread.yield();
         }
       }
+
       System.out.println(this);
       if (--countDown == 0) {
         return;

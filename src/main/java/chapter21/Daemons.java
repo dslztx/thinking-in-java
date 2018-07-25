@@ -1,5 +1,6 @@
-package concurrence_21;
+package chapter21;
 
+import chapter0.PrintUtils;
 import java.util.concurrent.TimeUnit;
 
 class Daemon implements Runnable {
@@ -10,10 +11,11 @@ class Daemon implements Runnable {
     for (int i = 0; i < t.length; i++) {
       t[i] = new Thread(new DaemonSpawn());
       t[i].start();
-      System.out.println("DaemonSpawn " + i + " started. ");
+      PrintUtils.print("DaemonSpawn " + i + " started, ");
     }
+
     for (int i = 0; i < t.length; i++) {
-      System.out.println("t[" + i + "].isDaemon() = " + t[i].isDaemon());
+      PrintUtils.print("t[" + i + "].isDaemon() = " + t[i].isDaemon() + ", ");
     }
     while (true) {
       Thread.yield();
@@ -32,12 +34,12 @@ class DaemonSpawn implements Runnable {
 
 public class Daemons {
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws Exception {
     Thread d = new Thread(new Daemon());
     d.setDaemon(true);
     d.start();
-    System.out.println("d.isDaemon() = " + d.isDaemon() + ". ");
+
+    PrintUtils.print("d.isDaemon() = " + d.isDaemon() + ", ");
     TimeUnit.SECONDS.sleep(1);
   }
-
 }

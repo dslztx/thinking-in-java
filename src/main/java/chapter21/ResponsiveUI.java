@@ -1,4 +1,4 @@
-package concurrence_21;
+package chapter21;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ class UnresponsiveUI {
 
   private volatile double d = 1;
 
-  public UnresponsiveUI() throws IOException {
+  public UnresponsiveUI() throws Exception {
     while (d > 0) {
       d = d + (Math.PI + Math.E) / d;
     }
@@ -34,5 +34,4 @@ public class ResponsiveUI extends Thread {
       d = d + (Math.PI + Math.E) / d;
     }
   }
-
 }

@@ -1,18 +1,19 @@
-package concurrence_21;
+package chapter21;
 
+import chapter0.PrintUtils;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class DaemonFromFactory implements Runnable {
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws Exception {
     ExecutorService exec = Executors.newCachedThreadPool(new DaemonThreadFactory());
 
     for (int i = 0; i < 10; i++) {
       exec.execute(new DaemonFromFactory());
     }
-    System.out.println("All daemons started");
+    PrintUtils.print("All daemons started");
     TimeUnit.MILLISECONDS.sleep(500);
   }
 
@@ -20,10 +21,11 @@ public class DaemonFromFactory implements Runnable {
     try {
       while (true) {
         TimeUnit.MILLISECONDS.sleep(100);
-        System.out.println(Thread.currentThread() + " " + this);
+        PrintUtils.print(Thread.currentThread() + " " + this);
       }
     } catch (InterruptedException e) {
-      System.out.println("Interrupted");
+      PrintUtils.print("Interrupted");
     }
   }
+
 }

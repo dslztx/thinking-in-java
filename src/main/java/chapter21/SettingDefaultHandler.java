@@ -1,17 +1,13 @@
-package concurrence_21;
+package chapter21;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class ExceptionThread implements Runnable {
+public class SettingDefaultHandler {
 
   public static void main(String[] args) {
+    Thread.setDefaultUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
     ExecutorService exec = Executors.newCachedThreadPool();
     exec.execute(new ExceptionThread());
   }
-
-  public void run() {
-    throw new RuntimeException();
-  }
-
 }

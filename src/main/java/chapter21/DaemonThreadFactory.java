@@ -1,4 +1,4 @@
-package concurrence_21;
+package chapter21;
 
 import java.util.concurrent.ThreadFactory;
 
@@ -9,4 +9,5 @@ public class DaemonThreadFactory implements ThreadFactory {
     t.setDaemon(true);
     return t;
   }
+
 }

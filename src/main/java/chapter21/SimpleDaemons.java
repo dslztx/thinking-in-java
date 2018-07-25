@@ -1,28 +1,30 @@
-package concurrence_21;
+package chapter21;
 
+import chapter0.PrintUtils;
 import java.util.concurrent.TimeUnit;
 
 public class SimpleDaemons implements Runnable {
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws Exception {
     for (int i = 0; i < 10; i++) {
       Thread daemon = new Thread(new SimpleDaemons());
       daemon.setDaemon(true);
       daemon.start();
     }
 
-    System.out.println("All daemons started");
+    PrintUtils.print("All daemons started");
     TimeUnit.MILLISECONDS.sleep(175);
   }
 
   public void run() {
     try {
       while (true) {
+
         TimeUnit.MILLISECONDS.sleep(100);
-        System.out.println(Thread.currentThread() + " " + this);
+        PrintUtils.print(Thread.currentThread() + " " + this);
       }
-    } catch (Exception e) {
-      System.out.print("sleep() interrupted");
+    } catch (InterruptedException e) {
+      PrintUtils.print("sleep() interrupted");
     }
   }
 }

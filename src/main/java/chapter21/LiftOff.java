@@ -1,4 +1,4 @@
-package concurrence_21;
+package chapter21;
 
 public class LiftOff implements Runnable {
 
@@ -7,6 +7,7 @@ public class LiftOff implements Runnable {
   protected int countDown = 10;
 
   public LiftOff() {
+
   }
 
   public LiftOff(int countDown) {
@@ -14,12 +15,12 @@ public class LiftOff implements Runnable {
   }
 
   public String status() {
-    return "#" + id + "(" + (countDown > 0 ? countDown : "LiftOff!") + "), ";
+    return "#" + id + "(" + (countDown > 0 ? countDown : "Liftoff!") + "), ";
   }
 
   public void run() {
     while (countDown-- > 0) {
-      System.out.print(status());
+      System.out.println(status());
       Thread.yield();
     }
   }

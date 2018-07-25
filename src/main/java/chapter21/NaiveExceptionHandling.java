@@ -1,9 +1,9 @@
-package concurrence_21;
+package chapter21;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class NativeExceptionHandling {
+public class NaiveExceptionHandling {
 
   public static void main(String[] args) {
     try {
@@ -13,5 +13,4 @@ public class NativeExceptionHandling {
       System.out.println("Exception has been handled");
     }
   }
-
 }

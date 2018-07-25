@@ -1,4 +1,4 @@
-package concurrence_21;
+package chapter21;
 
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -10,4 +10,5 @@ public class DaemonThreadPoolExecutor extends ThreadPoolExecutor {
     super(0, Integer.MAX_VALUE, 60L, TimeUnit.SECONDS, new SynchronousQueue<Runnable>(),
         new DaemonThreadFactory());
   }
+
 }
