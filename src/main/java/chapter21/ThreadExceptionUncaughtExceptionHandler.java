@@ -51,4 +51,3 @@ public class ThreadExceptionUncaughtExceptionHandler {
     System.out.println("thread is alive ? " + thread.isAlive());
   }
 }
-
