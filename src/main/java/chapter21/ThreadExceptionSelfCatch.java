@@ -29,8 +29,7 @@ public class ThreadExceptionSelfCatch {
 
     Thread.sleep(100);
 
-    //抓住异常，线程保持运行
+    //内部抓住异常，线程保持运行
     System.out.println("thread is alive ? " + thread.isAlive());
   }
 }
-
