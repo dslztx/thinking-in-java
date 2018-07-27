@@ -42,4 +42,3 @@ public class ThreadExceptionNotCatch {
     System.out.println("thread is alive ? " + thread.isAlive());
   }
 }
-
