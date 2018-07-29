@@ -26,7 +26,7 @@ public class MainThread2 {
         e.printStackTrace();
       }
 
-      System.out.println("can not run here");
+      System.out.println("can not run to here");
 
       try {
         Thread.sleep(10000);
